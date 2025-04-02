@@ -11,7 +11,7 @@ export default function Footer() {
     <div  >
       {/* footer */}
 
-      <div className="w-10/12 mx-auto mt-12 mb-18 flex justify-between space-x-9 ">
+      <div className="w-11/12 md:w-10/12 mx-auto  mt-12 mb-18 flex justify-between space-x-9 ">
         <div className="space-y-5">
           <p className="  w-30 items-center  "> <img src={MyLogo} alt="good-logo" /></p>
           <p className=" opacity-70  ">

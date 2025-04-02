@@ -32,7 +32,7 @@ createRoot(document.getElementById("root")).render(
 
 
       </Routes>
-          {/* < Footer/> */}
+          < Footer/>
           
     </BrowserRouter>
   </StrictMode>
