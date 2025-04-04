@@ -1,37 +1,65 @@
 import React from 'react'
+import { User } from "lucide-react";
+import { LockKeyhole } from "lucide-react";
 
 export default function Login() {
   return (
-    <div  className='flex  items-center justify-center h-[90vh] bg-gray-100 ' >
-    {/* Login page */}
-
-    <form className='w-3/12 space-y-5 bg-white p-8 border border-gray-200 '>
-    <p className=' text-3xl text-center'>LOGIN</p>
-        
-        <div className='flex flex-col space-y-1 '>
-          <label htmlFor="">Username or Email Address</label>
+    <div id="login" className="py-20 bg-gray-100">
+    <form className=" w-11/12 sm:w-8/12 md:w-6/12 xl:w-4/12 mx-auto shadow-xl border rounded-sm bg-white border-gray-200 p-10 space-y-6 ">
+      <p className=" text-xl sm:text-4xl p-4 bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent font-bold text-center">Login </p>
+      <div className=" grid  -ml-4  p-8 space-x-2 space-y-10">
+        <div className="flex flex-col  space-y-2">
+          <label htmlFor="email" className="text-sm sm:text-lg font-semibold">
+           Email Address
+          </label>
+          <p className="flex items-center  ">
+            <User size={18} className="text-gray-400 -mr-5" />
+          
           <input
-          id='email-address'
-          type="text" name='email address'
-          className='border border-gray-300 px-2 py-1 outline-none w-72 rounded-sm'
-          placeholder='Enter Your Email' />
+          id='email'
+            type="text"
+            placeholder=" Type your Email "
+            className="border-2 border-gray-200 px-4 py-2 w-65 sm:w-80 text-gray-500 outline-none text-sm font-semibold"
+          />
+          </p>
+          
         </div>
 
-        <div className='flex flex-col space-y-1 '>
-          <label htmlFor="">Password</label>
+        <div className="flex flex-col space-y-2">
+          <label htmlFor="" className="text-sm sm:text-lg font-semibold">
+            Password
+          </label>
+          <p className='flex items-center'>
+          <LockKeyhole size={18} className="text-gray-400 -mr-4.5 " />
           <input
-          id='password'
-          type="password" 
-          className='border border-gray-300 px-2 py-1 outline-none  w-72 rounded-sm'
-          placeholder='*********' />
+            type="password"
+            placeholder="Type your password"
+            className="border-2 border-gray-200 px-4 py-2 w-65 sm:w-80 text-gray-500 outline-none  text-sm font-semibold"
+          />
+          </p>
+
+          
         </div>
+      </div>
+      <div id="login_btn" className="flex justify-center items-center  w-30 ml-4 ">
+        <button className=" text-white text-sm font-semibold sm:px-10 px:30  py-2 cursor-pointer ">
+          LOGIN
+        </button>
+      </div>
+      <p className="text-sm font-semibold text-center bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent cursor-pointer">
+        Forget password?
+      </p>
+      
 
-
-
-       <button className='bg-blue-500 px-6 py-1.5 text-white hover:bg-blue-700 cursor-pointer duration-500'>
-        Log in
-       </button>
-
+      <div className=" space-y-4">
+        <p className="text-sm font-semibold text-center text-gray-500 cursor-pointer">
+          Or Sign Up Using{" "}
+        </p>
+        <p className="text-sm font-semibold text-center  cursor-pointer bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent">
+          {" "}
+          Sign Up{" "}
+        </p>
+      </div>
     </form>
   </div>
   )

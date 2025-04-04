@@ -11,7 +11,9 @@ export default function Footer() {
     <div  >
       {/* footer */}
 
-      <div className="w-11/12 md:w-10/12 mx-auto  mt-12 mb-18 flex justify-between space-x-9 ">
+      <div className="w-11/12 md:w-10/12 mx-auto grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-start justify-between space-y-15 mt-5 py-16 "> 
+
+
         <div className="space-y-5">
           <p className="  w-30 items-center  "> <img src={MyLogo} alt="good-logo" /></p>
           <p className=" opacity-70  ">
@@ -21,14 +23,14 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className="space-y-5 font-semibold" >
+        <div className="space-y-5 font-semibold md:text-center" >
           <h1 className=" text-lg  " >  Links</h1>
           <p className=" opacity-70  cursor-pointer hover:text-pink-600  duration-500 " >About Us</p>
           <p className=" opacity-70  cursor-pointer hover:text-pink-600  duration-500" >Our Story</p>
           <p className=" opacity-70  cursor-pointer hover:text-pink-600  duration-500" >Projects</p>
         </div>
 
-        <div className="space-y-5 font-semibold">
+        <div className="space-y-5 font-semibold ">
 
         <h1 className=" text-lg  " > Categories</h1>
         <div className=" space-x-4     ">
@@ -79,7 +81,7 @@ export default function Footer() {
 
       {/* 2nd footer */}
 
-      <div className="w-10/12 mx-auto  mb-5  flex justify-between">
+      <div className="w-10/12 mx-auto   mb-5  lg:flex  justify-between space-y-8 ">
         <div className=" space-y-7">
           <p className="text-sm  text-gray-500">
             This website may collect data about you, use cookies, embed
@@ -93,8 +95,8 @@ export default function Footer() {
         </div>
 
         <div className="space-y-3">
-          <p className="text-sm text-right  ">Follow Us On Socials</p>
-          <div className="flex items-center justify-end gap-4 text-gray-500 ">
+          <p className="text-sm font-semibold lg:text-right bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent ">Follow Us On Socials</p>
+          <div className=" flex items-center lg:justify-end gap-4 text-gray-500 ">
             <SquareM className="cursor-pointer " />
             <Twitter className="cursor-pointer " />
             <Instagram className="cursor-pointer " />
